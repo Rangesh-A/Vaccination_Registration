@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>VaccinationRegistration-Login</title>
+  <link rel="stylesheet" href="./Userlogin.css">
+</head>
+<body>
+<div id="bg"></div>
+
+<form action="UserLogin.php" method="post">
+	<div>
+		<p style="color: green;font-size: 20px;margin-left: 135px;"><b>User Login</b></p>
+	</div>
+  <div class="form-field">
+    <input type="email" name="email" id="email" placeholder="Email" required/>
+  </div>
+  
+  <div class="form-field">
+    <input type="password" name="password" id="password" placeholder="Password" required/>                         
+  </div>
+  <p style="color: rgb(0, 0, 0);font-size: 15px;margin-left: 140px;">Dont have an account? <a href="UserRegister.html" style="color:red; ">signup</a></p>
+  <br>
+  <div class="form-field">
+    <button class="btn" type="submit" onclick="register()" id="submitdata">Log in</button>
+  </div>
+</form>
+</body>
+</html>

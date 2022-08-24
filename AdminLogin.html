@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>VaccinationRegistration-Admin</title>
+  <link rel="stylesheet" href="./Adminlogin.css">
+
+</head>
+<body>
+<div id="bg"></div>
+
+<form name="myform" method="post">
+	<div>
+		<p style="color: #11aba9;font-size: 20px;margin-left: 120px;"><b>Admin Login</b></p>
+	</div>
+  <div class="form-field">
+    <input type="text" id="username" placeholder="Username" required/>
+  </div>
+  
+  <div class="form-field">
+    <input type="password" id="password" placeholder="Password" required/>                         
+  </div>
+  <div class="form-field">
+    <button class="btn" type="submit" onclick="Validate()">Log in</button>
+  </div>
+</form>
+</body>
+<script>
+  function Validate(){
+      var un=document.forms["myform"]["username"].value;
+      var pw=document.forms["myform"]["password"].value;
+      if(un=="admin"&&pw=="admin"){
+        // window.location = "http://localhost/Vaccination%20Registration/AdminPage.html";
+        window.open("AdminPage.html");
+      }else{
+        alert('Invalid Username or Password');
+      }
+  }
+</script>
+</html>
